@@ -95,5 +95,36 @@ namespace ModelManagement
             return result;
         }
 
+
+        public async Task UnloadModels(List<IModel> models, CancellationToken ct = default)
+        {
+            foreach (var model in models)
+            {
+                _logger.LogInformation($"Unloading model: {model.Alias}");
+                await model.UnloadAsync(ct);
+            }
+        }
+
+        public async Task ClearCacheAsync(CancellationToken ct = default)
+        {
+            ICatalog catalog = await _mgr.GetCatalogAsync(ct);
+
+            List<IModel> cachedModels = await catalog.GetCachedModelsAsync(ct);
+            foreach(var model in cachedModels)
+            {
+                _logger.LogInformation($"Removing model from cache: {model.Alias}");
+                await model.RemoveFromCacheAsync(ct);
+            }
+        }
+
+        public async Task RemoveModelsFromCacheAsync(List<IModel> models, CancellationToken ct = default)
+        {
+            foreach (var model in models)
+            {
+                _logger.LogInformation($"Removing model from cache: {model.Alias}");
+                await model.RemoveFromCacheAsync(ct);
+            }
+        }
+
     }
 }

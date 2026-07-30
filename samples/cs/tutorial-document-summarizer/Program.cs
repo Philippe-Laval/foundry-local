@@ -61,7 +61,7 @@ var systemPrompt =
     "Focus on the key points and main ideas.";
 
 // <file_reading>
-var target = args.Length > 0 ? args[0] : "document.txt";
+var target = args.Length > 0 ? args[0] : Path.Combine(AppContext.BaseDirectory, "document.txt");
 // </file_reading>
 
 if (Directory.Exists(target))

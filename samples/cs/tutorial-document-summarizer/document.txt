@@ -1,19 +1,18 @@
-Peace
+Automated testing is a practice in software development where tests are written and executed
+by specialized tools rather than performed manually. There are several categories of automated
+tests, including unit tests, integration tests, and end-to-end tests. Unit tests verify that
+individual functions or methods behave correctly in isolation. Integration tests check that
+multiple components work together as expected. End-to-end tests simulate real user workflows
+across the entire application.
 
-Peace is a state of harmony in the absence of hostility and violence. In a societal sense, peace is commonly used to mean a lack of conflict and freedom from fear of violence between individuals or groups.
+Adopting automated testing brings measurable benefits to a development team. It catches
+regressions early, before they reach production. It reduces the time spent on repetitive
+manual verification after each code change. It serves as living documentation of expected
+behavior, which helps new team members understand the codebase. Continuous integration
+pipelines rely on automated tests to gate deployments and maintain release quality.
 
-Promotion of peace is a core tenet of many philosophies, religions, and ideologies. Some examples are: religions such as Buddhism, Christianity, Jainism, and Islam, important figures like Mahatma Gandhi and Martin Luther King Jr., and literary writings like "Perpetual Peace: A Philosophical Sketch" by Immanuel Kant, "The Art of Peace" by Morihei Ueshiba, or ideologies that strictly adhere to it such as Pacifism within a sociopolitical scope. It is a frequent subject of symbolism and features prominently in art and other cultural traditions.
-
-The representation of peace has taken many diverse shapes and symbols based on culture, context, and history, each with their respective symbolism whose nature can be very complex. An example, being during post-violence, in contexts where intense emotions, these symbols can form to evoke unity and cooperation, described as to fill groups of people with pride and connection, yet the symbolism could also possibly form to convey oppression, hatred, or else. As such, a universal definition for peace does not concretely exist but gets expanded and defined proactively based on context and culture, in which it can serve many meanings not particularly benevolent in its symbolism.
-
-"Psychological peace" (such as peaceful thinking and emotions) is less relatively well-defined, yet perhaps a necessary precursor to establishing "behavioural peace". Peaceful behaviour sometimes results from a "peaceful inner disposition". It has been argued by some that inner qualities such as tranquility, patience, respect, compassion, kindness, self-control, courage, moderation, forgiveness, equanimity, and the ability to see the big picture can promote peace within an individual, regardless of the external circumstances of their life.
-
-Etymology
-
-The term 'peace' originates from the Anglo-French pes, and the Old French pais, meaning "peace, reconciliation, silence, agreement" (11th century). The Anglo-French term pes itself comes from the Latin pax, meaning "peace, compact, agreement, treaty of peace, tranquility, absence of hostility, harmony."
-
-The English word came into use in various personal greetings from c. 1300 as a translation of the Hebrew word shalom, which, according to Jewish theology, comes from a Hebrew verb meaning 'to be complete, whole'. Although "peace" is the usual translation, it is an incomplete one, because shalom, which is also cognate with the Arabic salaam, has multiple other meanings in addition to peace, including justice, good health, safety, well-being, prosperity, equity, security, good fortune, and friendliness, as well as simply the greetings, "hello" and "goodbye".
-
-On a personal level, peaceful behaviours are kind, considerate, respectful, just, and tolerant of others' beliefs and behaviors – tending to manifest goodwill. This understanding of peace can also pertain to an individual's introspective sense or concept of her/himself, as in being "at peace" in one's own mind, as found in European references from c. 1200. The early English term is also used in the sense of "quiet", reflecting calm, serene, and meditative approaches to family or group relationships that have an absence of quarreling, disturbances and agitation; but seek clarity of conversation, and tranquility.
-
-In many languages, the word 'peace' is also used as a greeting or a farewell, for example the Hawaiian word aloha, as well as the Arabic word salaam. In English the word peace is occasionally used as a farewell, especially for the dead, as in the phrases "rest in peace" or "peace out".
+Effective test suites follow a few guiding principles. Tests should be deterministic, meaning
+they produce the same result every time they run. Tests should be independent, so that one
+failing test does not cascade into false failures elsewhere. Tests should run fast, because
+slow tests discourage developers from running them frequently. Finally, tests should be
+maintained alongside production code so they stay accurate as the application evolves.

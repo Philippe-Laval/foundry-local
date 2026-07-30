@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\Shared\Utils.cs" Link="Utils.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AI.Foundry.Local" />
   </ItemGroup>
 

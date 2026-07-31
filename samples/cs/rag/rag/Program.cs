@@ -185,10 +185,10 @@ internal class Program
             norm_b += b[i] * b[i];
         }
 
-        norm_a = (float)Math.Sqrt(norm_a);
-        norm_b = (float)Math.Sqrt(norm_b);
+        norm_a = Math.Sqrt(norm_a);
+        norm_b = Math.Sqrt(norm_b);
 
-        return norm_a * norm_b != 0 ? dot / (norm_a * norm_b) : 0.0f;
+        return norm_a * norm_b != 0 ? dot / (norm_a * norm_b) : 0.0;
     }
 
 
